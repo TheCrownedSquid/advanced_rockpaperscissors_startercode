@@ -6,15 +6,19 @@
       <!-- Link CSS here -->
       <link rel="stylesheet" type="text/css" href="css/style.css" >
       <!-- Link JQuery here -->
-      <script src="script/jquery-3.1.1.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+
       <!-- Link Javascript File here -->
-      
       <!-- Latest compiled and minified Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Bangers|Spectral+SC" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="body">
       <!-- TASK 1: In the div below. 
         1. In a header tag, add a title.
         2. In a paragraph tag, add instructions on how to play the game.
@@ -25,11 +29,17 @@
      -->
     <div class="container text-center">
       <div class="title"><h1> SUPREME Rock Paper Scissors </h1></div>
-      <h2>Heres how to play<br/> Enter your choice into the input bar and wait for the computer to strike </h2> <br/>
+      <h2 class="txt1">Heres how to play<br/> Enter your choice into the input bar and wait for the computer to strike </h2> <br/>
       <img src="js/hands.jpg" width="300">
-      <h3>Enter your choice here please</h3>
-      <input placeholder="type here">
-      
+      <h3 class="txt2">Enter your choice here please</h3>
+      <input placeholder="Please Type Here"> 
+      <button class="click" id="playbutton">Determine Your Fate</button>
+      <h4 class="text" id="result"></h4>
+      <div id="computerChoice"></div> 
+      <div id="userChoice"></div> 
+      <div id="rock"></div>
+      <div id="paper"></div>
+      <div id="scissors"></div>
 
 
     

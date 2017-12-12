@@ -1,3 +1,26 @@
 .title{
     font-family: 'Atomic Age', cursive;
+    color:#fcf63c;
+}
+.click{
+    font-family: 'Spectral SC', serif;
+    color:#f93636;
+}
+.body{
+    background-color: #1e1e1e
+}
+.txt1{
+    color:#fcf63c;
+    font-family: 'Spectral SC', serif;
+font-family: 'Bangers', cursive;
+}
+.txt2{
+    color:#fcf63c;
+    font-family: 'Spectral SC', serif;
+font-family: 'Bangers', cursive;
+}
+.text{
+     color:#fcf63c;
+    font-family: 'Spectral SC', serif;
+font-family: 'Bangers', cursive;
 }

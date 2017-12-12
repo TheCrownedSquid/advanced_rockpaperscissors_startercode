@@ -18,13 +18,54 @@
 //******************TEST EARLY AND OFTEN USING console.log() ******************
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
-//GLOBAL VARIABLES
-
-
-
-//FUNCTIONS
-
-
+/*global $*/
+ $(document).ready(function(){
+    console.log("welcome");
+    
+     $("#playbutton").click(function() {
+         var userChoice = $("input").val()
+        var computerChoice= Math.random();
+     }
+    if(computerChoice<=0.33){
+        computerChoice="rock";
+    } else if(0.34<=computerChoice<=0.66){
+          computerChoice="paper"
+    } else{
+          computerChoice="scissors";
+    }
+    var gameresult= compare(userChoice,computerChoice);
+    console.log(gameresult, "gameresult")
+    $("#result").text(gameresult);
+    //FUNCTIONS
+    function compare(choice1, choice2){
+        if(choice1===choice2){
+                  return('The Result is a tie!');
+          }
+          if(choice1==="rock"){
+                  if(choice2==="scissors"){
+                          return('User wins')
+                  }else{
+                          return('Computer wins!')
+                  }
+          }
+  
+          if(choice1==="paper"){
+                  if(choice2==="rock"){
+                          return('User wins!')
+                  }else{
+                          return('Computer wins!')
+                  }
+          }
+          if(choice1==="scissors"){
+                  if(choice2==="rock"){
+                          return('User wins!')
+                  }else{
+                          return('Computer wins!')
+                  }
+          }
+          
+    }
+    });
 
 // DOCUMENT READY FUNCTION
 
